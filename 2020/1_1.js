@@ -6,8 +6,6 @@ function trySums() {
 	while(!result && data.length) {
 		const lastNumber = data.pop()
 		
-		console.log(data.length);
-		
 		data.every(entry => {
 			const sum = entry + lastNumber
 			
