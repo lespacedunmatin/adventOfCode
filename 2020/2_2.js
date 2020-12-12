@@ -32,7 +32,7 @@ function treatData(data) {
 		.map(line => formatLine(line))
 		.forEach(checkLine)
 
-	console.log(result) // expected: 454
+	console.log(result) // expected: 649
 
 }
 

@@ -33,4 +33,4 @@ function trySums() {
 
 data.sort()
 trySums()
-console.log(result)
+console.log(result) // Expected 161109702
