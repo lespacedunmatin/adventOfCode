@@ -30,9 +30,7 @@ function treatData(data) {
 	let sumNbResponsesPerGroup
 	
 	function treatLine(line) {
-		console.log(line)
 		if (line === '') {
-			console.log('new group')
 			newGroup = true
 			return
 		}
@@ -48,11 +46,9 @@ function treatData(data) {
 	data.split('\n')
 		.forEach(treatLine)
 
-	console.log(groups)
-
 	sumNbResponsesPerGroup = groups.reduce((sum, group) => sum + group.responses.length, 0)
 	
-	console.log(sumNbResponsesPerGroup) // expected: 
+	console.log(sumNbResponsesPerGroup) // expected: 6457
 }
 
 fs.readFile('./data/6.txt', 'utf8', (err, data) => {
