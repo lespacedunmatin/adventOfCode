@@ -14,7 +14,7 @@ class Group {
 	get responses() {
 		return this.passengers.reduce((groupResponses, passenger) => {
 			passenger.responses.forEach(response => {
-				if(!groupResponses.includes(response)) {
+				if (!groupResponses.includes(response)) {
 					groupResponses.push(response)
 				}
 			})
