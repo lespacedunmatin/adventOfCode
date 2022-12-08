@@ -3,7 +3,7 @@ const fs = require('fs')
 function treatData(data) {
 	function treatLine(line) {
 		if (line === '') {
-			return
+			return 0
 		}
 	}
 
