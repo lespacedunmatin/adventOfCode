@@ -5,20 +5,21 @@ function treatData(data) {
 		if (line === '') {
 			return
 		}
-		
 	}
-	
-	data.split('\n')
-		.forEach(treatLine)
-	
-	console.log() // expected: 
+
+	const lines = data.split('\n')
+
+	console.log(lines.reduce((acc, line) => acc + treatLine(line), 0)) // expected:
 }
 
-fs.readFile('./data/.txt', 'utf8', (err, data) => {
+// example data
+treatData(``) // expected:
+
+fs.readFile('./data/4.txt', 'utf8', (err, data) => {
 	if (err) {
 		console.log(err)
 		return
 	}
-	
-	treatData(data)
+
+	// treatData(data)
 })
