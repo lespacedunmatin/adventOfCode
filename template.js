@@ -15,7 +15,7 @@ function treatData(data) {
 // example data
 treatData(``) // expected:
 
-fs.readFile('./data/4.txt', 'utf8', (err, data) => {
+fs.readFile('./data/.txt', 'utf8', (err, data) => {
 	if (err) {
 		console.log(err)
 		return
