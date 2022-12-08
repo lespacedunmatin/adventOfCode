@@ -15,11 +15,11 @@ function treatData(data) {
 }
 
 // example data
-treatData(`mjqjpqmgbljsphdztnvjfqwrcgsmlb`) // expected: 19
+/*treatData(`mjqjpqmgbljsphdztnvjfqwrcgsmlb`) // expected: 19
 treatData(`bvwbjplbgvbhsrlpgdmjqwftvncz`) // expected: 23
 treatData(`nppdvjthqldpwncqszvftbrmjlhg`) // expected: 23
 treatData(`nznrnfrfntjfmvfwmzdfjlvtqnbhcprsg`) // expected: 29
-treatData(`zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw`) // expected: 26
+treatData(`zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw`) // expected: 26*/
 
 fs.readFile('./data/6.txt', 'utf8', (err, data) => {
 	if (err) {
