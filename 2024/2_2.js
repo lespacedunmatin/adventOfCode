@@ -55,6 +55,7 @@ treatData(`7 6 4 2 1
 1 3 2 4 5
 8 6 4 4 1
 1 3 6 7 9`) // expected: 4
+// Merci https://www.reddit.com/r/adventofcode/comments/1h4shdu/2024_day_2_part2_edge_case_finder/
 treatData(`7 6 4 2 1
 1 2 7 8 9
 9 7 6 2 1
